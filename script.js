@@ -97,6 +97,6 @@ reset_all.onclick = () => {
       updateText();
       stopCounter = 0;
     }
-    setTimeout(reset_it, 100);
+    setTimeout(reset_it, 1000);
 
 }
