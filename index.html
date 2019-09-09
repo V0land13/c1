@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HomeWork C1.11</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <!--    Заголовок   -->
+    <header class="container">
+                <h1 class="headerH">Back counter</h1>
+    </header>
+    <!--    Основное содержимое -->
+    <main class="container">
+        <!-- отображение счетчика -->
+        <div id="id_counter" class="row justify-content-center counter">
+            <div id="counter_minutes" class="col-2">
+                <h6>Minutes</h6>
+                <div id="show_minutes"></div>
+            </div>
+            <div id="counter_seconds" class="col-2">
+                <h6>Seconds</h6>
+                <div id="show_seconds"></div>
+            </div>
+        </div>
+        <div class="message"></div>
+        <!-- Ряд кнопок управления временем -->
+        <div id="time_setup" class="row justify-content-center">
+            <button id="min_plus">+ minutes</button>
+            <button id="min_minus">- minutes</button>
+            <button id="sec_plus">+ seconds</button>
+            <button id="sec_minus">- seconds</button>
+        </div>
+        <!-- Кнопки управления таймером -->
+        <div id="couner_sutup"  class="row justify-content-center">
+            <button id="counter_start">START</button>
+            <button id="counter_stop">STOP</button>
+        </div>
+        <div id="couner_sutup"  class="row justify-content-center">
+            <button id="reset_all">RESET</button>
+        </div>
+        <!-- Подключаю скрипты -->
+        <script src="script.js"></script> 
+    </main>
+</body>
+</html>
