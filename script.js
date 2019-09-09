@@ -85,11 +85,18 @@ counter_stop.onclick = () => {
 }
 
 reset_all.onclick = () => {
-    stopCounter = 0;
-    countSec = 0;
-    countMin = 0;
+    stopCounter = 1;
     counterChecker = 0;
-    timer.style.display = '';
-    message.innerHTML = ''
-    updateText(); 
+    updateText();
+    const reset_it = () =>{
+      countSec = 0;
+      countMin = 0;
+      counterChecker = 0;
+      timer.style.display = '';
+      message.innerHTML = ''
+      updateText();
+      stopCounter = 0;
+    }
+    setTimeout(reset_it, 100);
+
 }
