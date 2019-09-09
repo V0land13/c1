@@ -88,6 +88,7 @@ reset_all.onclick = () => {
     stopCounter = 0;
     countSec = 0;
     countMin = 0;
+    counterChecker = 0;
     timer.style.display = '';
     message.innerHTML = ''
     updateText(); 
